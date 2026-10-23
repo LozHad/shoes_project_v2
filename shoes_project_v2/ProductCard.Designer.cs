@@ -39,66 +39,65 @@
             // 
             // pbImage
             // 
-            pbImage.Location = new Point(13, 10);
+            pbImage.Location = new Point(14, 27);
+            pbImage.Margin = new Padding(3, 4, 3, 4);
             pbImage.Name = "pbImage";
-            pbImage.Size = new Size(130, 130);
+            pbImage.Size = new Size(120, 120);
             pbImage.SizeMode = PictureBoxSizeMode.Zoom;
             pbImage.TabIndex = 0;
             pbImage.TabStop = false;
             // 
             // lblHeader
             // 
-            lblHeader.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblHeader.Location = new Point(172, 10);
+            lblHeader.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblHeader.Location = new Point(159, 13);
             lblHeader.Name = "lblHeader";
-            lblHeader.Size = new Size(574, 40);
+            lblHeader.Size = new Size(625, 34);
             lblHeader.TabIndex = 1;
             lblHeader.Text = "label1";
             lblHeader.TextAlign = ContentAlignment.MiddleCenter;
+            lblHeader.Click += lblHeader_Click;
             // 
             // lblCategory
             // 
-            lblCategory.AutoSize = true;
-            lblCategory.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblCategory.Location = new Point(172, 50);
+            lblCategory.Font = new Font("Calibri", 9.75F);
+            lblCategory.Location = new Point(150, 57);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(38, 15);
+            lblCategory.Size = new Size(466, 24);
             lblCategory.TabIndex = 2;
             lblCategory.Text = "label1";
             // 
             // lblQuantity
             // 
-            lblQuantity.AutoSize = true;
-            lblQuantity.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblQuantity.Location = new Point(172, 74);
+            lblQuantity.Font = new Font("Calibri", 9.75F);
+            lblQuantity.Location = new Point(150, 83);
             lblQuantity.Name = "lblQuantity";
-            lblQuantity.Size = new Size(38, 15);
+            lblQuantity.Size = new Size(466, 24);
             lblQuantity.TabIndex = 3;
             lblQuantity.Text = "label1";
             // 
             // lblComposition
             // 
-            lblComposition.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblComposition.Location = new Point(172, 98);
+            lblComposition.Font = new Font("Calibri", 9.75F);
+            lblComposition.Location = new Point(150, 109);
             lblComposition.Name = "lblComposition";
-            lblComposition.Size = new Size(574, 42);
+            lblComposition.Size = new Size(518, 49);
             lblComposition.TabIndex = 4;
             lblComposition.Text = "label1";
             // 
             // lblPrice
             // 
             lblPrice.Anchor = AnchorStyles.Right;
-            lblPrice.AutoSize = true;
-            lblPrice.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            lblPrice.Location = new Point(535, 50);
+            lblPrice.Font = new Font("Calibri", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblPrice.Location = new Point(622, 59);
             lblPrice.Name = "lblPrice";
-            lblPrice.Size = new Size(70, 27);
+            lblPrice.Size = new Size(162, 48);
             lblPrice.TabIndex = 5;
             lblPrice.Text = "label1";
             // 
             // ProductCard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(lblPrice);
             Controls.Add(lblComposition);
@@ -106,11 +105,12 @@
             Controls.Add(lblCategory);
             Controls.Add(lblHeader);
             Controls.Add(pbImage);
+            Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ProductCard";
-            Size = new Size(755, 150);
+            Size = new Size(800, 174);
             ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

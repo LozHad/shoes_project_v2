@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProducts));
             flowLayoutPanelProducts = new FlowLayoutPanel();
             SuspendLayout();
             // 
@@ -36,17 +37,19 @@
             flowLayoutPanelProducts.Dock = DockStyle.Fill;
             flowLayoutPanelProducts.Location = new Point(0, 0);
             flowLayoutPanelProducts.Name = "flowLayoutPanelProducts";
-            flowLayoutPanelProducts.Size = new Size(784, 561);
+            flowLayoutPanelProducts.Size = new Size(697, 561);
             flowLayoutPanelProducts.TabIndex = 0;
             // 
             // FormProducts
             // 
-            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(784, 561);
+            BackColor = Color.White;
+            ClientSize = new Size(697, 561);
             Controls.Add(flowLayoutPanelProducts);
-            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "FormProducts";
             StartPosition = FormStartPosition.CenterScreen;

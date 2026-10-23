@@ -48,5 +48,10 @@
                 this.BackColor = Color.White;
             }
         }
+
+        private void lblHeader_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
