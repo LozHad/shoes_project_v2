@@ -29,5 +29,5 @@ public partial class VProductsCatalog
 
     public string? AvailableSizes { get; set; }
 
-    public long? TotalQuantity { get; set; }
+    public long? QuantityAvailable { get; set; }
 }

@@ -308,7 +308,7 @@ public partial class ShoesDbContext : DbContext
             entity.Property(e => e.SubcategoryName)
                 .HasMaxLength(50)
                 .HasColumnName("subcategory_name");
-            entity.Property(e => e.TotalQuantity).HasColumnName("total_quantity");
+            entity.Property(e => e.QuantityAvailable).HasColumnName("total_quantity");
         });
 
         OnModelCreatingPartial(modelBuilder);
